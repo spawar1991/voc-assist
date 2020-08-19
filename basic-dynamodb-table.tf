@@ -3,7 +3,7 @@ terraform {
     organization = "swapnil-training"
 
     workspaces {
-      name = "hashicat-gcp"
+      name = "voc-assist-demo"
     }
   }
 }
