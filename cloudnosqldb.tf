@@ -45,3 +45,4 @@ resource "aws_dynamodb_table" "cloudnosqldb" {
     Name        = "dynamodb-terraform"
     Environment = "production"
   }
+}
