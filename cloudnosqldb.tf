@@ -13,7 +13,7 @@ provider "aws" {
   region  = var.region
 }
 
-resource "aws_dynamodb_table" "cloudnosqldb" {
+resource "aws_dynamodb_table" "basic-dynamodb-table" {
   name           = "GameScores"
   billing_mode   = "PROVISIONED"
   read_capacity  = 2
