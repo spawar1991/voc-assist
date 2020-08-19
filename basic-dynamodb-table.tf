@@ -8,6 +8,11 @@ terraform {
   }
 }
 
+provider "aws" {
+  profile = "iac_user"
+  region  = "us-east-1"
+}
+
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
   name           = "GameScores"
   billing_mode   = "PROVISIONED"
