@@ -45,12 +45,12 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
     name               = "GameTitleIndex"
     hash_key           = "GameTitle"
     range_key          = "TopScore"
-    write_capacity     = 10
-    read_capacity      = 10
+    write_capacity     = 2
+    read_capacity      = 2
     projection_type    = "INCLUDE"
     non_key_attributes = ["UserId"]
   }
-  
+
   tags = {
     Name        = "dynamodb-terraform"
     Environment = "production"
